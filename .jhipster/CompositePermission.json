@@ -1,0 +1,30 @@
+{
+  "applications": ["eRestaurantGateway", "eRestaurantAdmin"],
+  "changelogDate": "20220621213932",
+  "clientRootFolder": "eRestaurantAdmin",
+  "databaseType": "sql",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "composite_permission",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength"],
+      "fieldValidateRulesMinlength": "5"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "eRestaurantAdmin",
+  "name": "CompositePermission",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

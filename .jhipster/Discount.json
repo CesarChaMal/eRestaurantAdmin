@@ -1,0 +1,41 @@
+{
+  "applications": ["eRestaurantGateway", "eRestaurantAdmin", "eRestaurantRestaurant"],
+  "changelogDate": "20220621213936",
+  "clientRootFolder": "eRestaurantAdmin",
+  "databaseType": "sql",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "discount",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength"],
+      "fieldValidateRulesMinlength": "5"
+    },
+    {
+      "fieldName": "code",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength"],
+      "fieldValidateRulesMinlength": "3"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "percentage",
+      "fieldType": "Float",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "eRestaurantAdmin",
+  "name": "Discount",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}
